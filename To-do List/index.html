@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- https://todotify.vercel.app/ -->
+    <div id="wrapper">
+        <div class="container">
+            <!-- <div class="app">
+                <input type="text" placeholder="Add new Task" class="newTask">
+                <button class="addTask">Add</button>
+            </div> -->
+            <div class="sub-container">
+                <h2>To-do List</h2>
+            <form  class="app" onsubmit="return false;">
+                <input type="text" placeholder="Add new Task" class="newTask">
+                <input type="date" class="dueDate">
+                <button type="submit" class="addTask addBtn">Add</button>
+            </form>
+            <div class="features">
+                <button class="ClearTasks">DELETE ALL</button>
+            </div>
+            <div class="Task-list" >
+                <div class="Task-heading">
+                    <p>TASK</p>
+                    <p>DUE DATE</p>
+                    <p>ACTION</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
