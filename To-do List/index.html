@@ -16,7 +16,9 @@
             </div> -->
             <div class="sub-container">
                 <h2>To-do List</h2>
-            <form  class="app" onsubmit="return false;">
+                <div class="popUpSuccess"><p>Task completed successfully</p></div>
+                <form  class="app" onsubmit="return false;">
+                    <div class="addedMsg"><p>Task added!</p></div>
                 <input type="text" placeholder="Add new Task" class="newTask">
                 <input type="date" class="dueDate">
                 <button type="submit" class="addTask addBtn">Add</button>
@@ -28,8 +30,10 @@
                 <div class="Task-heading">
                     <p>TASK</p>
                     <p>DUE DATE</p>
+                    <p>STATUS</p>
                     <p>ACTION</p>
                 </div>
+                <div class="emptyMsg"><p>No task Found</p></div>
             </div>
             </div>
         </div>
