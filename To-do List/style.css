@@ -34,6 +34,7 @@
 }
 
 .app{
+    position: relative;
     background-color: rgba(250, 207, 18, 0.612);
     border-radius: 3px;
     padding : 20px;
@@ -46,6 +47,7 @@ input{
     padding: 10px;
     color: black;
     border-radius: 5px;
+    font-size: medium;
     transition: all 200ms ease-in-out;
 }
 
@@ -58,8 +60,10 @@ button{
     background-color: transparent;
     border: 2px solid black;
     border-radius: 5px;
-    transition: all 400ms ease-in-out;
+    transition: all 200ms ease-in-out;
     cursor: pointer;
+    box-shadow: 0 0 10px 0px gray;
+
 }
 button:hover{
     background-color: black;
@@ -77,5 +81,48 @@ button:hover{
 }
 
 .addBtn{
+    all: unset;
+    padding: 4px 8px;
+    border-radius: 5px;
     background-color: lightgreen;
+    color: black;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0px black;
 }
+.emptyMsg{
+    margin-top: 20px;
+    color: gray;
+}
+
+.emptyMsg.remove{
+    display: none;
+}
+
+
+.addBtn:hover{
+    background-color: rgb(3, 164, 3);
+}
+
+.popUpSuccess , .addedMsg{
+    background-color: green;
+    padding: 6px;
+    border-radius: 8px;
+    color: white;
+    transition: all 1000ms ease-in-out;
+    scale: 0;
+    opacity: 0;
+}
+
+.popUpSuccess.active , .addedMsg.active{
+    /* display: block; */
+    scale: 1;
+    opacity: 100%;
+}
+
+.addedMsg{
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+
