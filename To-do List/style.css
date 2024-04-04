@@ -14,7 +14,7 @@
 
 .container{
     width: 100%;
-    margin: 50px auto;
+    margin: 150px auto;
     padding: 40px;
     color: black;
 }
@@ -32,6 +32,8 @@
     border: 1px solid white;
     border-radius: 10px;
     box-shadow: 0px 0px 20px 1px gray;
+    animation: Upmotion 1 linear 2000ms;
+    
 }
 
 .app{
@@ -128,3 +130,15 @@ button:hover{
     right: 0;
 }
 
+@keyframes Upmotion {
+    0%
+    {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateY(0);
+    }
+    
+}
