@@ -9,6 +9,7 @@
     width: 100%;
     overflow: hidden;
     background-color: white;
+
 }
 
 .container{
@@ -111,11 +112,12 @@ button:hover{
     color: white;
     transition: all 1000ms ease-in-out;
     scale: 0;
+    display: none;
     opacity: 0;
 }
 
 .popUpSuccess.active , .addedMsg.active{
-    /* display: block; */
+    display: block;
     scale: 1;
     opacity: 100%;
 }

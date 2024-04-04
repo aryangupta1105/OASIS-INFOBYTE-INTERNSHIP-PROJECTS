@@ -84,7 +84,7 @@ async function showPopUp(Message) {
 
     // Create a promise that resolves after 3 seconds
     const timeoutPromise = new Promise(resolve => {
-        setTimeout(resolve, 2500);
+        setTimeout(resolve, 1500);
     });
 
     // Wait for the timeout to complete
