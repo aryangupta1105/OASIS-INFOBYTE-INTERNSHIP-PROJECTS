@@ -1,0 +1,125 @@
+* , ::before , ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#wrapper{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+
+.container
+{
+    margin: 0 auto;
+    width: 10/12%;
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+    padding-bottom: 100px;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-style: italic;
+    margin-bottom: 100px;
+}
+
+.left-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.section{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.heading ~ hr{
+    margin-top: -100px;
+    background-color: black;
+    width: 100%;
+    color: black;
+}
+.subheading{
+    font-size: xx-large;
+    margin-top: -200px;
+    color: rgb(96, 95, 95);
+}
+.subheading span{
+    font-style: italic;
+}
+.content{
+    width: 50%;
+    font-size: large;
+    text-align: center;
+    word-spacing: 10px;
+    line-height: 20px;
+}
+
+h2{
+    font-size: xx-large;
+    color: rgb(119, 116, 116);
+}
+
+.section img{
+   width: 450px;
+   border: 2px solid gray;
+   border-radius: 40px;
+   /* filter: grayscale(10); */
+   animation: colorchange infinite linear 5s;
+   animation-direction: alternate;
+   transition: all 300ms ease-in-out;
+}
+
+@keyframes colorchange {
+    0%{
+        filter: grayscale(0);
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+        filter: grayscale(10);
+    }
+}
+
+.section img:hover{
+    animation: none;
+    scale: 1.1;
+    cursor: zoom-out;
+    box-shadow: 10px 10px 10px black;
+}
+.left-part p{
+    word-spacing: 5px;
+    font-style: italic;
+    line-height: 2rem;
+    font-size: large;
+    text-align: center;
+}
+
+.education , .developement{
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.Legacy .right{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.Legacy{
+    margin-bottom: 50px;
+}
+
+
