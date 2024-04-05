@@ -1,0 +1,106 @@
+* , ::before , ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: darkblue;
+}
+
+.container{
+    width: 500px;
+    margin: 250px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid blue;
+    padding: 50px;
+    border-radius: 10%;
+    box-shadow: 0 0 20px 2px blue;
+    background-color: rgb(244, 244, 138) ;
+
+    animation: moveUp 1 linear 1000ms ;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: rgb(246, 159, 159);
+    padding: 50px;
+    border-radius: 10px;
+    color: black;
+    font-size: medium;
+}
+input{
+    width: 30%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input:focus{
+    box-shadow: 0 0 10px 2px gray;
+}
+.heading{
+    width: 100%;
+    margin-bottom: 50px;
+    background-color: rgb(103, 178, 233) ;
+    padding: 20px;
+    border-radius: 10px;
+}
+.box{
+    width: 400px;
+    display: flex ;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
+
+.actions{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.actions button{
+    all: unset;
+    width: 100px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+@keyframes moveUp {
+    0%
+    {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 100%;
+        transform: translateY(0);
+    }
+    
+}
