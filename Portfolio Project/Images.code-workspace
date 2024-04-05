@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Images",
+			"path": "D:/DotBatch/Projects/10 - Portfolio Website/Images"
+		},
+		{
+			"name": "portfolio.dot",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "portfolio.dot"
+	}
+}
