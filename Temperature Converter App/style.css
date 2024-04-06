@@ -8,12 +8,16 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    background-color: darkblue;
+    /* background-image: url(./bg\ temp.jpg); */
+    background-color: rgb(233, 206, 253);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .container{
     width: 500px;
-    margin: 250px auto;
+    margin: 80px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,12 +29,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid blue;
+    /* border: 1px solid black; */
     padding: 50px;
-    border-radius: 10%;
-    box-shadow: 0 0 20px 2px blue;
-    background-color: rgb(244, 244, 138) ;
-
+    border-radius: 5px;
+    box-shadow: 0 0 30px 5px gray;
+    background-color: rgba(255 ,255 ,255, 0.7);
     animation: moveUp 1 linear 1000ms ;
 }
 .field{
@@ -39,25 +42,32 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    background-color: rgb(246, 159, 159);
+    background-color: rgb(255, 121, 9 , 0.5);
     padding: 50px;
-    border-radius: 10px;
+    border-radius: 5px;
     color: black;
-    font-size: medium;
+    font-size: x-large;
+    font-weight: bold;
 }
 input{
-    width: 30%;
+    width: 40%;
     padding: 5px;
     border-radius: 5px;
+    font-size: large;
 }
 
 input:focus{
     box-shadow: 0 0 10px 2px gray;
 }
 .heading{
-    width: 100%;
+    width: 120%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 50px;
-    background-color: rgb(103, 178, 233) ;
+    color: rgb(77, 75, 75);
+    font-size: xx-large;
+    background-color: rgb(255, 255, 125 , 0.7) ;
+    box-shadow: 0 0 20px 0px black;
     padding: 20px;
     border-radius: 10px;
 }
@@ -81,6 +91,8 @@ input:focus{
     all: unset;
     width: 100px;
     padding: 5px 10px;
+    font-size: large;
+    font-weight: bold;
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
